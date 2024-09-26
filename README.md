@@ -79,39 +79,29 @@ Run the application using Node.js:
 npx ts-node src/app.ts
 ```
 ### **Navigation**
-When you start the application, you will be presented with the following options:
-
-**View All Departments**: Displays a list of all departments and their IDs.
-
-**View All Roles**: Displays all roles, including the job title, role ID, department, and salary.
-
-**View All Employees**: Displays all employees, including their ID, first and last name, job title, department, salary, and manager.
-
-**Add Department**: Prompts you to enter the name of a new department to add to the database.
-
+When you start the application, you will be presented with the following options: 
+**View All Departments**: Displays a list of all departments and their IDs. 
+**View All Roles**: Displays all roles, including the job title, role ID, department, and salary. 
+**View All Employees**: Displays all employees, including their ID, first and last name, job title, department, salary, and manager. 
+**Add Department**: Prompts you to enter the name of a new department to add to the database. 
 **Add Role**: Prompts you to enter the title, salary, and department for a new role.
-
-**Add Employee**: Prompts you to enter the first name, last name, role, and manager for a new employee.
-
+**Add Employee**: Prompts you to enter the first name, last name, role, and manager for a new employee. 
 **Update Employee Role**: Allows you to select an employee and update their role.
 
 ## **Database Schema**
 The database contains three main tables:
 
 **Department**
-
 `id`: SERIAL PRIMARY KEY
 `name`: VARCHAR(30) UNIQUE NOT NULL
 
 **Role**
-
 `id`: SERIAL PRIMARY KEY
 `title`: VARCHAR(30) UNIQUE NOT NULL
 `salary`: DECIMAL NOT NULL
 `department_id`: INTEGER NOT NULL (references department)
 
 **Employee**
-
 `id`: SERIAL PRIMARY KEY
 `first_name`: VARCHAR(30) NOT NULL
 `last_name`: VARCHAR(30) NOT NULL
@@ -119,15 +109,11 @@ The database contains three main tables:
 `manager_id`: INTEGER (references employee)
 
 ### **Commands**
-**Add Department**: Creates a new department.
-
-**Add Role**: Adds a new role, specifying its salary and associated department.
-
-**Add Employee**: Adds a new employee, specifying their role and manager.
-
-**View Commands**: Allows you to view departments, roles, and employees.
-
-**Update Employee Role**: Updates an employee’s role.
+**Add Department**: Creates a new department. 
+**Add Role**: Adds a new role, specifying its salary and associated department. 
+**Add Employee**: Adds a new employee, specifying their role and manager. 
+**View Commands**: Allows you to view departments, roles, and employees. 
+**Update Employee Role**: Updates an employee’s role. 
 
 ### **Contributing**
 Contributions are welcome! If you have any suggestions or improvements, please submit a pull request or open an issue.
